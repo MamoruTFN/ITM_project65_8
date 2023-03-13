@@ -624,11 +624,11 @@ def handle_content_message(event):
     #yhat = "Santa" if santa > notSanta else "Not Santa"
     #acc = santa if santa > notSanta else notSanta
     if (yhat[0] == 0):
-        label = "มีโอกาสที่จะเป็น โรคใบไหม้" 
+        label = "มีโอกาสที่จะเป็น โรคใบจุด" 
     elif (yhat[0] == 1):
-        label = "มีโอกาสที่จะเป็น โรคขาดแคลเซียม" 
+        label = "ใบสตอเบอรี่นี้ไม่มีโรค"
     elif (yhat[0] == 2):
-        label = "ใบสตอเบอรี่นี้ไม่มีโรค" 
+        label = "มีโอกาสที่จะเป็น โรคขาดแคลเซียม"
     #label = "{}: {:.2f}%".format(dic[yhat[0]], acc * 100)
 
     # draw the label on the image
